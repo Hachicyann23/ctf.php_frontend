@@ -1,0 +1,37 @@
+.containerSoal {
+	height: 80vh;
+	padding: 7.5vh 2.5vw;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.box {
+	border: 1px solid red;
+	border-radius: 20px;
+	text-align: center;
+	padding: 1.5rem 2rem;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: ' judulSoal judulSoal judulSoal positionMenu jumlahPoin ' 'penjelasan penjelasan penjelasan penjelasan penjelasan ' ;
+	
+}
+.box .judulSoal{
+	grid-area: judulSoal;
+}
+.box .positionMenu{
+	grid-area: positionMenu;
+}
+.box .jumlahPoin {
+	grid-area: jumlahPoin;
+
+}
+.box .penjelasan  {
+	grid-area: penjelasan;
+}
+
+
+@media (max-width :500px){
+	.containerSoal{
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}

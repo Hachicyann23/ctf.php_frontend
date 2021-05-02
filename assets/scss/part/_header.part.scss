@@ -1,0 +1,85 @@
+header.navBar {
+    background: white;
+    height: 10vh;
+}
+
+li a .buttonHeader {
+    font-size: 16px;
+    color: red;
+    text-decoration: none;
+}
+header.navBar {
+    display: flex;
+    justify-content: space-between;//flexend 
+    align-items: center;
+    padding: 30px 20px;
+}
+.navBar img{
+    //order: 3;
+    //margin: auto;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.navBar h2 {
+    position: relative;
+    right: 400px;
+}
+.headerNav {
+    //order: 1;
+    list-style: none;
+}
+.headerNav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.headerNav li a {
+    transition: all 0.3s ease 0s;
+}
+.headerNav li a:hover{
+    color: blue;
+}
+.buttonHeader{
+    //order: 2;
+    padding: 9px 25px;
+    background: #0bb1e4ee;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.buttonHeader:hover {
+    background: #0bb1e46c;
+}
+
+
+@media  (max-width:1800px){
+    .navBar h2 {
+        right: 350px;
+    }
+}
+@media  (max-width:1600px){
+    .navBar h2 {
+        right: 300px;
+    }
+}
+@media  (max-width:1450px){
+    .navBar h2 {
+        right: 250px;
+    }
+}
+@media  (max-width:1300px){
+    .navBar h2 {
+        right: 150px;
+    }
+}
+@media  (max-width:1000px){
+    .navBar h2 {
+        right: 100px;
+    }
+}
+@media  (max-width:1000px){
+    .navBar h2 {
+        right: 0;
+    }
+}

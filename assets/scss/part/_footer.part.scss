@@ -1,0 +1,47 @@
+
+footer{
+    background: $shadow;
+    height: 10vh;
+    width: 100%;
+    color: $white;
+    font-weight: 400;
+}
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerContent h3 {
+    padding: 0 0 0 30px;
+    font-size: 1.8rem ;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footerContent p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 1em;
+}
+.sosialMedia {
+    position: relative;
+    top: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  1rem 0 3rem 0;
+}
+.sosialMedia a {
+    text-decoration: none;
+    color:white;
+}
+.sosialMedia a i {
+    font-size: 1.5em;
+    transition: color .4s ease ;
+    padding: 0 30px;
+}
+.sosialMedia a:hover {
+    color: aqua;
+}
