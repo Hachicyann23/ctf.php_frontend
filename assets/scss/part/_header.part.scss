@@ -1,85 +1,90 @@
-header.navBar {
-    background: white;
+nav {
+    background: #524848c2;
     height: 10vh;
+    width: 100%;   
+     
 }
 
-li a .buttonHeader {
-    font-size: 16px;
-    color: red;
-    text-decoration: none;
+img.logoImg{
+    width: 6rem;
+    padding: 10px 0 0 20px;
 }
-header.navBar {
-    display: flex;
-    justify-content: space-between;//flexend 
-    align-items: center;
-    padding: 30px 20px;
-}
-.navBar img{
-    //order: 3;
-    //margin: auto;
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-}
-.navBar h2 {
+label.logo {
     position: relative;
-    right: 400px;
+    color: white;
+    top: -30px;
+    padding: 0 50px;
+    font-size: 35px;
+    font-weight: bold;
 }
-.headerNav {
-    //order: 1;
-    list-style: none;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
-.headerNav li {
+nav ul li {
     display: inline-block;
-    padding: 0 20px;
+    line-height: 80px;
+    margin: 0 5px ;
 }
-.headerNav li a {
-    transition: all 0.3s ease 0s;
+ nav ul li a {
+     color: white;
+     font-size: 17px;
+     padding:  7px 13px;
+     border-radius:5px ;
+     text-transform: uppercase;
+ }
+a.active,a:hover {
+    background: #d1b0abcb;
+    transition: .5s ;
 }
-.headerNav li a:hover{
-    color: blue;
-}
-.buttonHeader{
-    //order: 2;
-    padding: 9px 25px;
-    background: #0bb1e4ee;
-    border: none;
-    border-radius: 50px;
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height:80px;
+    margin-right: 40px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    display: none;
 }
-.buttonHeader:hover {
-    background: #0bb1e46c;
+#check {
+    display: none;
 }
-
-
-@media  (max-width:1800px){
-    .navBar h2 {
-        right: 350px;
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
     }
 }
-@media  (max-width:1600px){
-    .navBar h2 {
-        right: 300px;
+@media (max-width :858px) {
+    .checkbtn{
+        display: block;
     }
-}
-@media  (max-width:1450px){
-    .navBar h2 {
-        right: 250px;
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:burlywood; 
+        top: 97px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
     }
-}
-@media  (max-width:1300px){
-    .navBar h2 {
-        right: 150px;
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
-}
-@media  (max-width:1000px){
-    .navBar h2 {
-        right: 100px;
+    nav ul li a {
+        font-size: 20px;
     }
-}
-@media  (max-width:1000px){
-    .navBar h2 {
-        right: 0;
+    a:hover,a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul {
+        left: 0;
     }
 }
