@@ -15,14 +15,15 @@
 <body>
 	<section>
 <div class="circle"></div>	
+
+
 <header class="headerLogin">
 	<img src="assets/img/ATL2021.png" alt=""><div class="logo"><a href="">CTF 2021_UAJM</a></div>
 	<div class="containerSign">
-		<div class="sigNp"><a href="index.php">Sudah Punya Akun  ?</a></div>
-		<a href="index.php"><div class="buttonSign"> Sign Up </div></a>
+		<div class="sigNp"><a href="buat_akun.php">Sudah Punya Akun  ?</a></div>
+		<a href="index.php"><div class="buttonSign"> Sign In </div></a>
 	</div>
 </header>
-
 <div class="formContainer">
 	<div class="formBoxSign">
 		<div class="judulForm"><h1>WELCOME</h1><h2>Capture The Flag</h2></div>

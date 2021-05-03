@@ -41,13 +41,7 @@
 <body>
 	<section>
 <div class="circle"></div>	
-<header class="headerLogin">
-	<img src="assets/img/ATL2021.png" alt=""><div class="logo"><a href="">CTF 2021_UAJM</a></div>
-	<div class="containerSign">
-		<div class="sigNp"><a href="buat_akun.php">Belum Punya Akun  ?</a></div>
-		<a href="buat_akun.php"><div class="buttonSign"> Sign Up </div></a>
-	</div>
-</header>
+<?php include "template/header_Login.temp.php"?>
 <div class="formContainer">
 	<div class="formBox">
 		<div class="judulForm"><h1>WELCOME</h1><h2>Capture The Flag</h2></div>

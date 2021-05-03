@@ -39,19 +39,19 @@
 				<li id="ICmi" class="main material-icons" onclick="myFunction();changedIcon('pause_circle')">play_circle
 				</li>
 				<li class="one material-icons md-48 md-dark"
-					onclick="changedH1('Web Exploitation');changedColor('#EED5D1');changedColorText('#991901');changedP('Solve The Problem And Find flag!');changedButton('#991901');changedLink('#WEB')">
+					onclick="changedH1('Web Exploitation');changedColor('#EED5D1');changedColorText('#991901');changedP('Solve The Problem And Find flag!');changedButton('#991901');changedLink('submenu1.php')">
 					language</li>
 				<li class="two material-icons md-48 md-dark"
-					onclick="changedH1('Cryptography');changedColorText('#013499');changedColor('#98DAE9');changedP('Solve The Problem And Find flag!');changedButton('#017E99');changedLink('#Cryptography')">
+					onclick="changedH1('Cryptography');changedColorText('#013499');changedColor('#98DAE9');changedP('Solve The Problem And Find flag!');changedButton('#017E99');changedLink('submenu1.php')">
 					https</li>
 				<li class="three material-icons md-48 md-dark"
-					onclick="changedH1('Forensics');changedColorText('#C7771A');changedColor('#E8D8C7');changedP('Solve The Problem And Find flag!');changedButton('#C7771A');changedLink('#Forensik')">
+					onclick="changedH1('Forensics');changedColorText('#C7771A');changedColor('#E8D8C7');changedP('Solve The Problem And Find flag!');changedButton('#C7771A');changedLink('submenu1.php')">
 					fingerprint</li>
 				<li class="four material-icons md-48 md-dark"
-					onclick="changedH1('General Skill');changedColorText('#1AC76A');changedColor('#D1EBDD');changedP('Solve The Problem And Find flag!');changedButton('#11A655');changedLink('#General')">
+					onclick="changedH1('General Skill');changedColorText('#1AC76A');changedColor('#D1EBDD');changedP('Solve The Problem And Find flag!');changedButton('#11A655');changedLink('submenu1.php')">
 					lightbulb</li>
 				<li class="five material-icons md-48 md-dark"
-					onclick="changedH1('Binary Exploitation');changedColorText('#013499');changedColor('#CBD8F7 ');changedP('Solve The Problem And Find flag!');changedButton('#1A4BC7');changedLink('#Binary')">
+					onclick="changedH1('Binary Exploitation');changedColorText('#013499');changedColor('#CBD8F7 ');changedP('Solve The Problem And Find flag!');changedButton('#1A4BC7');changedLink('submenu1.php')">
 					extension</li>
 			</ul>
 		</div>
