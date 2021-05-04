@@ -439,6 +439,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -467,57 +468,272 @@ a {
           filter: drop-shadow(7px 10px #524848c2);
 }
 
-.containerSoal {
-  height: 80vh;
-  padding: 7.5vh 2.5vw;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+.menuContainer {
+  width: 100%;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.box {
-  border: 1px solid red;
-  border-radius: 20px;
+.menuContainer .menuCard {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  background: chocolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  -webkit-box-shadow: 0 20px 50px black;
+          box-shadow: 0 20px 50px black;
+  overflow: hidden;
+}
+
+.menuContainer:hover .menuCard {
+  opacity: 0.5;
+}
+
+.menuContainer .menuCard:hover {
+  opacity: 1;
+}
+
+.menuContainer .menuCard::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.menuContainer .menuCard .menuContent {
+  padding: 30px;
   text-align: center;
-  padding: 1.5rem 2rem;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-      grid-template-areas: ' judulSoal judulSoal judulSoal positionMenu jumlahPoin ' 'penjelasan penjelasan penjelasan penjelasan penjelasan ';
 }
 
-.box .judulSoal {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: judulSoal;
+.menuContainer .menuCard .menuContent h2 {
+  position: absolute;
+  top: 65px;
+  left: 30px;
+  font-size: 4em;
+  font-weight: 800;
+  color: #ffbb00;
+  z-index: 1;
+  opacity: 0.1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.box .positionMenu {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: positionMenu;
+.menuContainer .menuCard:hover .menuContent h2 {
+  opacity: 1;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
 }
 
-.box .jumlahPoin {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: jumlahPoin;
+.menuContainer .menuCard .menuContent h3 {
+  position: relative;
+  font-size: 1.5em;
+  color: white;
+  z-index: 2;
+  opacity: 0.5;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.box .penjelasan {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: penjelasan;
+.menuContainer .menuCard .menuContent p {
+  position: relative;
+  font-size: 1em;
+  color: white;
+  z-index: 2;
+  opacity: 0.5;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-@media (max-width: 500px) {
-  .containerSoal {
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.menuContainer .menuCard:hover .menuContent h3, .menuContainer .menuCard:hover .menuContent p {
+  opacity: 1;
+}
+
+.menuContainer .menuCard .menuContent a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #750808;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menuContainer .menuCard span {
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  opacity: 0;
+}
+
+.menuContainer .menuCard:hover span {
+  opacity: 1;
+}
+
+.menuContainer .menuCard span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(blue));
+  background: linear-gradient(to right, transparent, blue);
+  -webkit-animation: animate1 2s linear infinite;
+          animation: animate1 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.menuContainer .menuCard span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(blue));
+  background: linear-gradient(to bottom, transparent, blue);
+  -webkit-animation: animate2 2s linear infinite;
+          animation: animate2 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+.menuContainer .menuCard span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(blue));
+  background: linear-gradient(to left, transparent, blue);
+  -webkit-animation: animate3 2s linear infinite;
+          animation: animate3 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.menuContainer .menuCard span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(blue));
+  background: linear-gradient(to top, transparent, blue);
+  -webkit-animation: animate4 2s linear infinite;
+          animation: animate4 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
@@ -584,10 +800,6 @@ footer {
   padding: 0 30px;
 }
 
-.sosialMedia a:hover {
-  color: aqua;
-}
-
 nav {
   background: #524848c2;
   height: 10vh;
@@ -627,7 +839,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-a.active, a:hover {
+a.navMen.active, a.navMen:hover {
   background: #d1b0abcb;
   -webkit-transition: .5s;
   transition: .5s;
@@ -753,10 +965,5 @@ header.headerLogin {
   text-decoration: none;
   color: #f2ebeb;
   font-weight: 700;
-}
-
-section.scoreContainer {
-  position: relative;
-  height: 80vh;
 }
 /*# sourceMappingURL=style.css.map */
