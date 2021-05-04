@@ -1,0 +1,45 @@
+.containerList {
+    position: relative;
+    width: 450px;
+    height: 80vh;
+    box-sizing: border-box;
+}
+.containerList .boxList {
+    display: flex;
+    background: grey;
+    padding: 10px 20px ;
+    color: white;
+    margin: 5px 0 ;
+    transition: 0.5s;
+}
+
+.containerList .boxList:nth-child(1){
+    background: rgba(128, 128, 128, 0.733);
+}
+.containerList .boxList:nth-child(2){
+    background: rgba(128, 128, 128, 0.53);
+}
+.containerList .boxList:nth-child(3){
+    background: rgba(128, 128, 128, 0.333);
+}
+.containerList .boxList:nth-child(4){
+    background: rgba(128, 128, 128, 0.13);
+}
+.containerList .boxList span:nth-child(1){
+    width: 30px;
+}
+.containerList .boxList span:nth-child(2){
+    width: 200px;
+}
+.containerList .boxList span:nth-child(3){
+    width: 100px;
+    align-items: right;
+}
+.containerList .boxList span:nth-child(4){
+    width: 70px;
+    align-items: right;
+}
+.containerList .boxList:hover {
+    transform: scale(1.06);
+    background: hotpink;
+}
