@@ -71,6 +71,7 @@ a.navMen.active,a.navMen:hover {
         left: -100%;
         text-align: center;
         transition: all 0.5s;
+        z-index: 100;
     }
     nav ul li {
         display: block;
