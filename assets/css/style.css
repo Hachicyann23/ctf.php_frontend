@@ -754,4 +754,9 @@ header.headerLogin {
   color: #f2ebeb;
   font-weight: 700;
 }
+
+section.scoreContainer {
+  position: relative;
+  height: 80vh;
+}
 /*# sourceMappingURL=style.css.map */

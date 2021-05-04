@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,AAAA,eAAe,AAAA,CAClB,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,IAAI,CACf",
-    "sources": [
-        "../scss/part/scoreBoard.scss"
-    ],
-    "names": [],
-    "file": "scoreBoard.min.css"
-}
